@@ -4,10 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="favicon.png" type="image/png" />
+    <link
+      rel="icon"
+      href="/assets/favicon.png
+    "
+      type="image/png"
+    />
     <title>Z4X, el robot - Contacto</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="/styles/contactoAlternativo.css" />
+    <link rel="stylesheet" href="styles_general.css" />
+    <link rel="stylesheet" href="/styles_pages/contactoAlternativo.css" />
   </head>
 
   <body>
@@ -64,13 +69,16 @@
             <option value="Paraguay">Paraguay</option>
           </select>
 
-          <label for="genero">Género:</label>
-          <select name="genero" id="genero" required>
-            <option value="">Selecciona tu género</option>
-            <option value="Hombre">Hombre</option>
-            <option value="Mujer">Mujer</option>
-            <option value="Otro">Otro</option>
-          </select>
+          <label>Género:</label>
+          <div class="radio-group">
+            <label
+              ><input type="radio" name="genero" value="Hombre" required />
+              Hombre</label
+            >
+            <label
+              ><input type="radio" name="genero" value="Mujer" /> Mujer</label
+            >
+          </div>
 
           <label for="tema">Historia favorita:</label>
           <select name="tema" id="tema" required>
@@ -93,11 +101,15 @@
         </form>
       </div>
     </main>
-
     <footer>
-      <p>Derechos reservados &copy; 2023</p>
+      <div class="footer-container">
+        <span>Derechos reservados &copy; 2024</span>
+        <span>Realizado por Dennis Pinzón | Proyecto de prácticas</span>
+        <span>
+          <a href="mailto:pinzonfabricio9430@gmail.com">Contacto</a>
+        </span>
+      </div>
     </footer>
-
-    <script src="botonHamburgueza.js"></script>
+    <script src="/setting_js/botonHamburgueza.js"></script>
   </body>
 </html>
