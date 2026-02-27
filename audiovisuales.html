@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <title>Z4X, el robot</title>
+
+    <!-- Acá van los links a los css que te darán estilos, uno general y otro particular -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/styles/audiovisuales.css" />
+  </head>
+
+  <body>
+    <!-- Este es el título y la navegación -->
+    <header>
+      <h1>Z4X, el robot</h1>
+      <nav>
+        <div class="menu-toggle" id="menu-toggle">
+          <span class="icono">☰</span>
+          <span class="text-menu">Menú</span>
+        </div>
+        <ul id="menu">
+          <!-- El que tiene el clase active es donde estás parado y te ayuda a darle estilo especial -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="misiones.html">Misiones</a></li>
+          <li>
+            <a class="active" href="audiovisuales.html">Audiovisuales</a>
+          </li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="centrado">
+        <div class="deLado">
+          <!-- VIDEO -->
+          <div class="galeria">
+            <video
+              src="/assets/videos/video.mp4"
+              autoplay
+              muted
+              loop
+              controls
+            ></video>
+            <div class="descripcion">
+              Z4X iniciando su exploración en la superficie lunar.
+            </div>
+          </div>
+
+          <!-- IMAGEN 1 -->
+          <div class="galeria">
+            <a href="/assets/img/img3.png" target="_blank">
+              <img
+                src="/assets/img/img3.png"
+                alt="Z4X explorando la superficie de la Luna"
+              />
+            </a>
+            <div class="descripcion">
+              Z4X analizando el terreno rocoso de la Luna durante su misión de
+              reconocimiento.
+            </div>
+          </div>
+
+          <!-- IMAGEN 2 -->
+          <div class="galeria">
+            <a href="/assets/img/img4.png" target="_blank">
+              <img
+                src="/assets/img/img4.png"
+                alt="Z4X recolectando muestras lunares"
+              />
+            </a>
+            <div class="descripcion">
+              El robot recolecta muestras minerales para su estudio en
+              laboratorio orbital.
+            </div>
+          </div>
+
+          <!-- IMAGEN 3 -->
+          <div class="galeria">
+            <a href="/assets/img/img5.png" target="_blank">
+              <img
+                src="/assets/img/img5.png"
+                alt="Z4X observando el horizonte lunar"
+              />
+            </a>
+            <div class="descripcion">
+              Z4X monitorea el horizonte lunar mientras registra datos
+              atmosféricos.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Este es el footer (la parte del final de la página) -->
+    <footer>
+      <p>Derechos reservados &copy; 2023</p>
+    </footer>
+    <script src="botonHamburgueza.js"></script>
+  </body>
+</html>

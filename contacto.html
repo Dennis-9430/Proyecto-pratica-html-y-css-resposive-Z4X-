@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <title>Z4X, el robot - Contacto</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/styles/contactoAlternativo.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Z4X, el robot</h1>
+      <nav>
+        <div class="menu-toggle" id="menu-toggle">
+          <span class="icono">☰</span>
+          <span class="text-menu">Menú</span>
+        </div>
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="misiones.html">Misiones</a></li>
+          <li><a href="audiovisuales.html">Audiovisuales</a></li>
+          <li><a class="active" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="contenedor">
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Escribí aquí tu nombre"
+            required
+            minlength="3"
+          />
+
+          <label for="mail">Email:</label>
+          <input
+            type="email"
+            id="mail"
+            name="mail"
+            placeholder="Escribí aquí tu email"
+            required
+          />
+
+          <label for="pais">País:</label>
+          <select name="pais" id="pais" required>
+            <option value="">Selecciona tu país</option>
+            <option value="Ecuador">Ecuador</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Chile">Chile</option>
+            <option value="Bolivia">Bolivia</option>
+            <option value="Perú">Perú</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="España">España</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Venezuela">Venezuela</option>
+            <option value="Paraguay">Paraguay</option>
+          </select>
+
+          <label for="genero">Género:</label>
+          <select name="genero" id="genero" required>
+            <option value="">Selecciona tu género</option>
+            <option value="Hombre">Hombre</option>
+            <option value="Mujer">Mujer</option>
+            <option value="Otro">Otro</option>
+          </select>
+
+          <label for="tema">Historia favorita:</label>
+          <select name="tema" id="tema" required>
+            <option value="">Selecciona una temática</option>
+            <option value="ficcion">Ficción</option>
+            <option value="terror">Terror</option>
+            <option value="aventura">Aventura</option>
+            <option value="fantasia">Fantasía</option>
+            <option value="ciencia">Ciencia</option>
+          </select>
+
+          <label for="comentario">Comentario:</label>
+          <textarea
+            name="comentario"
+            id="comentario"
+            placeholder="Escribí aquí tu comentario"
+          ></textarea>
+
+          <input type="submit" value="Enviar" />
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>Derechos reservados &copy; 2023</p>
+    </footer>
+
+    <script src="botonHamburgueza.js"></script>
+  </body>
+</html>
